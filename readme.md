@@ -26,7 +26,7 @@ it up for yourself:
    you'd like. Alternatively, you can just make a new worksheet in an existing 
    Sheet file.
 2. Rename the worksheet ("Sheet1" if you just made a new Google Sheet) to
-   something meaningful, ie "Appointment Singups".
+   something meaningful, ie "Appointment Signups".
 3. Use "Tools" -> "Create a Form" to make a new Google Form linked to the
    worksheet you just renamed. You can name the Form anything you'd like.
 4. Add the form questions. You need the following:
@@ -50,7 +50,8 @@ it up for yourself:
    and [`settings.gs`](https://raw.githubusercontent.com/iansan5653/google-appointment-scheduler/master/settings.gs)
    from this repository to your new script project.
 8. Configure `settings.gs` in your script project using the descriptions provided
-   for each setting.
+   for each setting. This is important! Be careful with each setting to get it
+   right.
 9. In the script project, create a time-based trigger: click the clock icon
     next to the save icon, click "+ Add Trigger". Under "Choose which function
     to run", choose "updateAppointmentsTimeslots". Under "Select event source"
