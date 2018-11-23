@@ -1,12 +1,12 @@
 /** 
  * ID of the Google Calendar to add appointments to. You can get this ID from
- * a calendar's "Settings and Sharing" page, under "Integrate calendar", as
- * "Calendar ID". It's typically an email address but may have a string of
+ * a calendar"s "Settings and Sharing" page, under "Integrate calendar", as
+ * "Calendar ID". it's typically an email address but may have a string of
  * random characters.
  * The person setting this up must have access to read and write to the calendar.
  * @type {string}
  */
-var APPOINTMENTS_CALENDAR_ID = 'example@group.calendar.google.com';
+var APPOINTMENTS_CALENDAR_ID = "example@group.calendar.google.com";
 /**
  * List of Google Calendar IDs to check for existing events. Will not allow
  * appointment signups if these calendars have any events already. This list
@@ -16,30 +16,30 @@ var APPOINTMENTS_CALENDAR_ID = 'example@group.calendar.google.com';
  * @type {string[]}
  */
 var BUSY_CALENDARS = [
-    'usfsoar@gmail.com',
+    "usfsoar@gmail.com",
     APPOINTMENTS_CALENDAR_ID
 ];
 /**
  * Name of the column in the Google Sheet linked to the signup Form that contains
- * the submitter's email address. If you have turned on "Collect Email Addresses"
- * for the Form, this will be 'Email Address'.
+ * the submitter"s email address. If you have turned on "Collect Email Addresses"
+ * for the Form, this will be "Email Address".
  * @type {string}
  */
-REQUESTS_SHEET_EMAIL_COL = 'Email Address';
+REQUESTS_SHEET_EMAIL_COL = "Email Address";
 /**
  * Name of the column in the Google Sheet linked to the signup Form that contains
- * the submitter's name. This is the same as the name of the question
+ * the submitter"s name. This is the same as the name of the question
  * on the Form that asks for their name.
  * @type {string}
  */
-REQUESTS_SHEET_NAME_COL = 'Name';
+REQUESTS_SHEET_NAME_COL = "Name";
 /**
  * Name of the column in the Google Sheet linked to the signup Form that contains
- * the submitter's signup time. This is the same as the name of the question
+ * the submitter"s signup time. This is the same as the name of the question
  * on the Form that asks for their signup time.
  * @type {string}
  */
-REQUESTS_SHEET_TIME_COL = 'Selected Appointment Time';
+REQUESTS_SHEET_TIME_COL = "Selected Appointment Time";
 /**
  * Whether or not to allow scheduling appointments on weekends.
  * @type {bool}
@@ -90,14 +90,14 @@ APPOINTMENT_LENGTH_MINUTES = 30;
  * @see {@link https://momentjs.com/docs/#/parsing/string-format/}
  * @type {string}
  */
-TIME_FORMAT = 'dddd, MMM D, YYYY @ h:mm a';
+TIME_FORMAT = "dddd, MMM D, YYYY @ h:mm a";
 /**
  * Text to add at the beginning of added calendar events.
  * @type {string}
  */
-APPOINTMENT_EVENT_NAME_SUFFIX = ' Interview';
+APPOINTMENT_EVENT_NAME_SUFFIX = " Interview";
 /**
  * Text to add at the beginning of added calendar events.
  * @type {string}
  */
-APPOINTMENT_EVENT_NAME_PREFIX = '(Requested) ';
+APPOINTMENT_EVENT_NAME_PREFIX = "(Requested) ";
