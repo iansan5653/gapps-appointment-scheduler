@@ -27,24 +27,24 @@ it up for yourself:
    Sheet file.
 2. Rename the worksheet ("Sheet1" if you just made a new Google Sheet) to
    something meaningful, ie "Appointment Signups".
-3. Use "Tools" -> "Create a Form" to make a new Google Form linked to the
+3. Use _Tools_ → _Create a Form_ to make a new Google Form linked to the
    worksheet you just renamed. You can name the Form anything you'd like.
 4. Add the form questions. You need the following:
-    1. Turn on "Collect email addresses" in the settings in the gear menu in the
-       top right, OR create a "Short answer"-type question asking for their
+    1. Turn on _Collect email addresses_ in the settings in the gear menu in the
+       top right, OR create a _Short answer_-type question asking for their
        email address. Call this "Email Address" or take note of what you call it.
-    2. Create a "Short answer"-type question asking for the user's name. Call
+    2. Create a _Short answer_-type question asking for the user's name. Call
        Call this "Name" or take note of what you call it.
-    3. Create a "Multiple choice"-type question asking for the user to select a
+    3. Create a _Multiple choice_-type question asking for the user to select a
        time. I reccommend noting what time zone you are in and how long the
        appointments will take in the description for this question. You can
        leave the options empty; they will be automatically filled. Call this
        "Selected Appointment Time" or take note of what you call it. 
-5. Back in the Google Sheet you created, go to "Tools" -> "Script Editor". This
+5. Back in the Google Sheet you created, go to _Tools_ → _Script Editor_. This
    will open a new tab with a Google Apps Script project. Rename this to the
    same name you called the Google Sheet.
-6. In the script project, create two new files using "File" -> "New" -> "Script
-   File". Call one of them `moment.gs` and the other `settings.gs`.
+6. In the script project, create two new files using _File_ → _New_ → _Script
+   File_. Call one of them `moment.gs` and the other `settings.gs`.
 7. Copy and paste the contents of [`Code.gs`](https://raw.githubusercontent.com/iansan5653/google-appointment-scheduler/master/Code.gs),
    [`moment.gs`](https://raw.githubusercontent.com/iansan5653/google-appointment-scheduler/master/moment.gs),
    and [`settings.gs`](https://raw.githubusercontent.com/iansan5653/google-appointment-scheduler/master/settings.gs)
@@ -53,7 +53,7 @@ it up for yourself:
    for each setting. This is important! Be careful with each setting to get it
    right.
 9. In the script project, create a time-based trigger: click the clock icon
-    next to the save icon, click "+ Add Trigger". Under "Choose which function
-    to run", choose "updateAppointmentsTimeslots". Under "Select event source"
-    choose "Time-driven". Click "Save".
+    next to the save icon, click _+ Add Trigger_. Under _Choose which function
+    to run_, choose `updateAppointmentsTimeslots`. Under _Select event source_
+    choose _Time-driven_. Click _Save_.
 
